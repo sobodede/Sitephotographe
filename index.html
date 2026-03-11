@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographe professionnel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1 class="logo">Photographe Professionnel</h1>
+        <ul class="menu">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#prestations">Prestations</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<!-- SECTION ACCUEIL -->
+<section id="accueil" class="hero">
+    <h2>Capturer vos plus beaux moments</h2>
+    <p>Photographe professionnel spécialisé dans les mariages, portraits et événements. Je vous accompagne pour immortaliser les moments importants de votre vie.</p>
+    <a href="#contact" class="btn">Réserver une séance</a>
+</section>
+
+<!-- SECTION PRESENTATION -->
+<section class="presentation">
+    <h2>Un regard professionnel pour vos souvenirs</h2>
+    <p>Passionné par la photographie, je mets mon expertise au service de vos événements afin de capturer des images authentiques et naturelles. Chaque séance est pensée pour refléter vos émotions et votre personnalité.</p>
+</section>
+
+<!-- SECTION PRESTATIONS -->
+<section id="prestations" class="services">
+    <h2>Prestations</h2>
+    <div class="services-container">
+        <div class="service-card">
+            <h3>Mariages</h3>
+            <p>Reportage photo complet pour capturer chaque moment de votre journée.</p>
+        </div>
+        <div class="service-card">
+            <h3>Portraits</h3>
+            <p>Séances portrait individuelles ou professionnelles dans un style naturel et moderne.</p>
+        </div>
+        <div class="service-card">
+            <h3>Événements</h3>
+            <p>Couverture photographique pour vos événements privés ou professionnels.</p>
+        </div>
+        <div class="service-card">
+            <h3>Studio</h3>
+            <p>Séances photo en studio avec éclairage professionnel.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="gallery">
+        <img src="images/photo1.jpeg" alt="photographie mariage">
+        <img src="images/photo2.jpeg" alt="portrait professionnel">
+        <img src="images/photo3.jpeg" alt="photographie événement">
+        <img src="images/photo4.jpeg" alt="séance photo studio">
+    </div>
+</section>
+
+<!-- SECTION CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form class="contact-form">
+        <input type="text" name="nom" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message" required></textarea>
+        <button type="submit" class="btn">Envoyer</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p> 2026 Photographe professionnel - Tous droits réservés</p>
+</footer>
+
+<script>
+    const form = document.querySelector('.contact-form');
+    form.addEventListener('submit', function(e){
+        e.preventDefault();
+        alert("Merci ! Votre message a été envoyé.");
+        form.reset();
+    });
+</script>
+
+</body>
+</html>
