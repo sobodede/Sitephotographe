@@ -64,10 +64,10 @@
 <section id="portfolio" class="portfolio">
     <h2>Portfolio</h2>
     <div class="gallery">
-        <img src="images/photo1.jpeg" alt="photographie mariage">
-        <img src="images/photo2.jpeg" alt="portrait professionnel">
-        <img src="images/photo3.jpeg" alt="photographie événement">
-        <img src="images/photo4.jpeg" alt="séance photo studio">
+        <img src="images/photo1.jpg" alt="photographie mariage">
+        <img src="images/photo2.jpg" alt="portrait professionnel">
+        <img src="images/photo3.jpg" alt="photographie événement">
+        <img src="images/photo4.jpg" alt="séance photo studio">
     </div>
 </section>
 
@@ -99,3 +99,11 @@
 
 </body>
 </html>
+
+<form action="traitement.php" method="POST">
+  <input type="text" name="nom" placeholder="Nom" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="text" name="sujet" placeholder="Sujet" required>
+  <textarea name="message" placeholder="Message" required></textarea>
+  <button type="submit">Envoyer</button>
+</form>
